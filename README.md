@@ -11,4 +11,4 @@ yarn add @craco/craco
 yarn add craco-less
 
 
-npm start
+yarn start

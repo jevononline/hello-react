@@ -24,16 +24,16 @@ class Lesson2 extends React.Component {
       isLiked: !this.state.isLiked
     });
 
-    console.log(this.state.count) // 0
-    this.setState({ count: this.state.count + 1 }) // => 1
-    console.log(this.state.count) // 0
-    this.setState({ count: this.state.count + 2 }) // => 2  执行最后一个
+    // console.log(this.state.count) // 0
+    // this.setState({ count: this.state.count + 1 }) // => 1
+    // console.log(this.state.count) // 0
+    this.setState({ count: this.state.count + 2 }) // => 2  
 
     // 2 setState 接受函数参数
     // console.log(this.state.count) // 0
-    // this.setState((prevState) => {
-    //   return { count: 0 }
-    // })
+    this.setState((prevState) => {
+      return { count: 0 }
+    })
     // this.setState((prevState) => {
     //   return { count: prevState.count + 1 } // 上一个 setState 的返回是 count 为 0，当前返回 1
     // })
